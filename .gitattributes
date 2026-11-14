@@ -1,0 +1,7 @@
+# Force git to treat PDFs and binary assets as binary without CRLF alteration
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.joblib binary
+*.pkl binary
