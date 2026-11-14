@@ -1,0 +1,161 @@
+%-------------------------
+% Resume in LaTeX - Reshab Sharma
+% Target: Machine Learning Engineer / AI Engineer / Data Scientist
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+% Margins adjustment
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\normalsize#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, label=\raisebox{0.25ex}{\tiny$\bullet$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Reshab Sharma} \\ \vspace{2pt}
+    Greater Noida, Delhi NCR, India \\ \vspace{3pt}
+    \small 
+    \href{tel:+919103380852}{\faPhone\ +91-9103380852} ~|~
+    \href{mailto:reshabsharma2345@gmail.com}{\faEnvelope\ reshabsharma2345@gmail.com} ~|~
+    \href{https://linkedin.com/in/reshab-sharma-1198a8335/}{\faLinkedin\ LinkedIn} ~|~
+    \href{https://github.com/info-extractors}{\faGithub\ GitHub} ~|~
+    \href{https://leetcode.com/u/ReshabSharma/}{\faCode\ LeetCode} ~|~
+    \href{https://codeforces.com/profile/alwaysAnewbie}{\faTerminal\ Codeforces}
+\end{center}
+\vspace{-6pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sharda University}{2023 -- 2027 (Expected)}
+      {Bachelor of Technology in Computer Science and Engineering -- \textbf{CGPA: 9.2 / 10.0}}{Greater Noida, UP}
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, C++, SQL, JavaScript, C \\
+     \textbf{Machine Learning \& GenAI:} PyTorch, Hugging Face, Transformers, LightGBM, Scikit-Learn, ChromaDB, BM25, Cross-Encoder Reranking, Causal Elasticity, TreeSHAP \\
+     \textbf{Backend \& Cloud/MLOps:} FastAPI, Streamlit, Docker, REST APIs, PostgreSQL, MongoDB, Git, GitHub Actions, Linux \\
+     \textbf{Data Engineering \& Math:} Pandas, NumPy, SciPy, Statistical Hypothesis Testing, Constrained Optimization, Feature Engineering
+    }}
+ \end{itemize}
+\vspace{-6pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Freelance Backend Developer}{March 2025 -- September 2025}
+      {Contract / Client Solutions}{Remote, India}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed scalable RESTful backend services using Node.js, Express, and PostgreSQL for client applications.}
+        \resumeItem{Implemented database schemas, secure authentication workflows, and high-throughput API endpoints to serve real-time user requests.}
+        \resumeItem{Collaborated with cross-functional teams to integrate backend APIs with responsive frontend interfaces, improving maintainability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+     \resumeProjectHeading
+          {\textbf{InsightRAG -- Enterprise Multimodal RAG \& Document Intelligence} $|$ \emph{Python, ChromaDB, BM25, Qwen 2.5, Streamlit}}{2026}
+          \resumeItemListStart
+            \resumeItem{Architected a layout-aware Multimodal RAG platform preserving tabular Markdown and SEC 10-K financial report structures.}
+            \resumeItem{Engineered a hybrid retrieval engine fusing Dense vector search (ChromaDB) with Okapi BM25 sparse search using Reciprocal Rank Fusion ($k=60$) and neural Cross-Encoder reranking.}
+            \resumeItem{Integrated local CPU-optimized Qwen 2.5 0.5B inference for an 8GB RAM footprint, backed by automated citation auditing and numerical hallucination guardrails.}
+            \resumeItem{\href{https://github.com/info-extractors/insight-rag}{\underline{GitHub Repository: info-extractors/insight-rag}}}
+          \resumeItemListEnd
+
+     \resumeProjectHeading
+          {\textbf{PriceOptima -- Dynamic Pricing \& Demand Elasticity Engine} $|$ \emph{Python, LightGBM, SciPy, FastAPI, Streamlit}}{2026}
+          \resumeItemListStart
+            \resumeItem{Formulated an econometric log-log causal estimator extracting price elasticity of demand and 95\% confidence intervals across multi-SKU retail catalogs.}
+            \resumeItem{Trained a LightGBM non-linear demand regressor achieving $R^2 = 0.942$ and $\text{WAPE} = 9.68\%$ on an out-of-sample temporal holdout test set.}
+            \resumeItem{Built a prescriptive profit optimizer with margin floors ($\ge 15\%$) and inventory caps, driving a $+24.8\%$ portfolio gross profit uplift.}
+            \resumeItem{\href{https://github.com/info-extractors/PriceOptima}{\underline{GitHub Repository: info-extractors/PriceOptima}}}
+          \resumeItemListEnd
+
+     \resumeProjectHeading
+          {\textbf{Customer Intent Prediction Engine} $|$ \emph{Python, Scikit-Learn, XGBoost, Pandas, Imbalanced Learning}}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed an end-to-end predictive classification pipeline forecasting customer e-commerce purchase intent from behavioral and demographic signals.}
+            \resumeItem{Engineered interaction features, addressed class imbalance using cost-sensitive learning, and conducted cross-validation hyperparameter tuning.}
+            \resumeItem{Analyzed feature importance and decision boundaries using SHAP/permutation metrics to provide interpretable marketing decision insights.}
+            \resumeItem{\href{https://github.com/info-extractors/Customer-Intent-prediction-using-machine-learning}{\underline{GitHub Repository: info-extractors/Customer-Intent-prediction-using-machine-learning}}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Certifications \& Competitive Programming}
+ \begin{itemize}[leftmargin=0.18in, label=\raisebox{0.25ex}{\tiny$\bullet$}]
+    \small{
+      \item \textbf{Competitive Programming:} Active problem solver across LeetCode, GeeksforGeeks, and Codeforces; strong proficiency in algorithms and data structures.
+      \item \textbf{Mastering Data Structures \& Algorithms} -- Udemy Verified Certification (\href{https://www.udemy.com/certificate/UC-c0e8dc21-8e8b-4f6e-9d05-5d109a9523cd/}{\underline{Credential Link}}).
+      \item \textbf{C++ Advanced Programming} -- Udemy Verified Certification (\href{https://www.udemy.com/certificate/UC-b732c216-80d9-448c-b5fd-42b4aa7ca0ee/}{\underline{Credential Link}}).
+    }
+ \end{itemize}
+
+\end{document}
